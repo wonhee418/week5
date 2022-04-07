@@ -42,7 +42,6 @@ public class RestaurantsService {
         }
 
         Restaurant restaurants = new Restaurant(name, minOrderPrice, deliveryFee);
-        // 레스토랑 레포지토리에 저장하여 JPA로 테이블에 넣어준다.
         restaurantsRepository.save(restaurants);
         return restaurants;
 
